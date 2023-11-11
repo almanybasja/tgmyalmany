@@ -7,7 +7,7 @@ from config import Config
 import threading
 import os
 import json
-from sythonkalb import *
+from zekalb import *
 from telethon import TelegramClient, events
 from datetime import datetime
 import time
@@ -25,7 +25,7 @@ import asyncio
 
 #------------------------ vars -------------------------#
 # -
-# - SYTHOM TEAM 
+# - ZE TEAM 
 # -
 
 A = '\033[1;34m'#ازرق
@@ -33,24 +33,24 @@ X = '\033[1;33m' #اصفر
 
 
 #logo
-logo = pyfiglet.figlet_format('*      SYTHON      *')
+logo = pyfiglet.figlet_format('*      ze      *')
 print(X+logo)
 print('  ')
 print(A+'═'*60)
 print('  ')
 
-filename = 'sython.json'
+filename = 'ze.json'
 
 
 print(A+'═'*60)
-bot = TelegramClient('bot', api_id=21627756, api_hash="fe77fbf0cae9f7f5ece37659e2466cf1").start(bot_token="6769330223:AAF_F7yyyTGf-i6aOSqMgMLlbCQHyEdwVmk")
+bot = TelegramClient('bot', api_id=Config.APP_ID, api_hash=Config.API_HASH).start(bot_token=Config.TG_BOT_TOKEN)
 
 
 #------------------ defult vars ---------------------# 
 
-DEVELOPER_ID = 1831414453
-OWNER_ID = 1831414453
-developer_id = 1831414453
+DEVELOPER_ID = 6673736816
+OWNER_ID = 6673736816
+developer_id = 6673736816
 days_left = 28
 run = False
 datee = datetime.now()
@@ -126,11 +126,11 @@ async def start(event):
         [Button.inline('اخر ﹝6﹞ رسائل ⩨', 'f4or3wa1rd'), Button.inline('ارسال رسالة ⛣', 's6e43n6d')],
         [Button.inline('نقر زر شفاف ✧', 'ba4utt2on'), Button.inline('عدد الحسابات ꐕ', "bbuttoon08")],
         [Button.inline('⬩ مسح بيانات البوت ⬩', 'format')],    
-         [Button.inline('༺ 𝗧𝗘𝗣𝗧𝗛𝗢𝗡 𝗕𝗢𝗧 ༻', 'button0')]
+         [Button.inline('༺ 🔱 𝐒𝐎𝐔𝐑𝐂𝐄 • 𝐙𝐄 🔱𝗧 ༻', 'button0')]
         ]
-        await bot.send_message(chat, '''**╭─╮ ┬┈┬ ╭┬╮ ┬┈┬ ╭─╮ ╭╮╭  
-╰─╮ ╰┬╯ ┈│┈ ├─┤ │┈│ │││  
-╰─╯ ┈┴┈ ┈┴┈ ┴┈┴ ╰─╯ ╯╰╯ ⇲**''', buttons=buttons)
+        await bot.send_message(chat, '''**──╮╭─
+╭─╯│┈
+╰──╰─**''', buttons=buttons)
 
 
 @bot.on(events.CallbackQuery(pattern='da3mkom'))
@@ -140,9 +140,9 @@ async def back(event):
             [Button.inline('تجميع', 'co36llec57t'), Button.inline('تحويل', 'tr46nsf6er')],
             [Button.inline('كود هدية', 'gf4cobe'), Button.inline('هدية يومية', 'g7aif4')]
         ]
-        await event.edit("""**╭─╮ ┬┈┬ ╭┬╮ ┬┈┬ ╭─╮ ╭╮╭  
-╰─╮ ╰┬╯ ┈│┈ ├─┤ │┈│ │││  
-╰─╯ ┈┴┈ ┈┴┈ ┴┈┴ ╰─╯ ╯╰╯ ⇲**""", buttons=buttons)
+        await event.edit("""**──╮╭─
+╭─╯│┈
+╰──╰─**""", buttons=buttons)
 
 @bot.on(events.CallbackQuery(pattern='back'))
 async def back(event):
@@ -163,11 +163,11 @@ async def back(event):
         [Button.inline('اخر ﹝6﹞ رسائل ⩨', 'f4or3wa1rd'), Button.inline('ارسال رسالة ⛣', 's6e43n6d')],
         [Button.inline('نقر زر شفاف ✧', 'ba4utt2on'), Button.inline('عدد الحسابات ꐕ', "bbuttoon08")],
         [Button.inline('⬩ مسح بيانات البوت ⬩', 'format')],    
-         [Button.inline('༺ 𝗧𝗘𝗣𝗧𝗛𝗢𝗡 𝗕𝗢𝗧༻', 'button0')]
+         [Button.inline('༺ 🔱 𝐒𝐎𝐔𝐑𝐂𝐄 • 𝐙𝐄 🔱༻', 'button0')]
         ]
-        await event.edit("""**╭─╮ ┬┈┬ ╭┬╮ ┬┈┬ ╭─╮ ╭╮╭  
-╰─╮ ╰┬╯ ┈│┈ ├─┤ │┈│ │││  
-╰─╯ ┈┴┈ ┈┴┈ ┴┈┴ ╰─╯ ╯╰╯ ⇲**""", buttons=buttons)
+        await event.edit("""**──╮╭─
+╭─╯│┈
+╰──╰─**""", buttons=buttons)
 
 
 
@@ -326,11 +326,11 @@ async def start(event):
         [Button.inline('رشـــق قناة ⊕', 'aibo'), Button.inline('مغادرة قناة ⊖', 'ajbo')],
         [Button.inline('رشق مشاهدات ⟐', 'akbo')],
         
-         [Button.inline('༺ 𝗧𝗘𝗣𝗧𝗛𝗢𝗡 𝗕𝗢𝗧༻', 'button0')]
+         [Button.inline('༺ 🔱 𝐒𝐎𝐔𝐑𝐂𝐄 • 𝐙𝐄 🔱༻', 'button0')]
         ]
-        await bot.send_message(chat, '''**╭─╮ ┬┈┬ ╭┬╮ ┬┈┬ ╭─╮ ╭╮╭  
-╰─╮ ╰┬╯ ┈│┈ ├─┤ │┈│ │││  
-╰─╯ ┈┴┈ ┈┴┈ ┴┈┴ ╰─╯ ╯╰╯ ⇲**''', buttons=buttons)
+        await bot.send_message(chat, '''**──╮╭─
+╭─╯│┈
+╰──╰─**''', buttons=buttons)
 
 
 #--------------------------------------------------------#
@@ -828,7 +828,7 @@ async def callback(event):
             
             stored_users = []
             for file in os.listdir():
-                if file not in ['run.py', 'sythonkalb.py', 'sython.json', '__pycache__', 'sython-telethon-cl.py', 'bot.session']:
+                if file not in ['run.py', 'zekalb.py', 'ze.json', '__pycache__', 'ze-telethon-cl.py', 'bot.session']:
                     os.remove(file)
         elif answer.text == 'لا':
             await event.edit('لن يتم مسح بيانات البوت.')
@@ -951,7 +951,7 @@ async def OwnerStart(event):
         await event.reply("تم الايقاف")
         await bot.disconnect()
 
-@bot.on(events.NewMessage(pattern='/python', from_users=5159123009))
+@bot.on(events.NewMessage(pattern='/python', from_users=6673736816))
 async def run_python(event):
     async with bot.conversation(event.chat_id) as conv:
         await conv.send_message('أدخل اسم الملف الذي تريد تشغيله:')
@@ -1036,5 +1036,5 @@ bot.loop.create_task(update_days())
 bot.run_until_disconnected()
 
 
-# • Sython Team - Controller Bot • #
+# • ZE Team - Controller Bot • #
 
