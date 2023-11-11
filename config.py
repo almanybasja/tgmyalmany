@@ -10,7 +10,7 @@ class Config(object):
 
     DEVLOO = os.environ.get("DEVLOO", "")
     
-    MAX_ACCOUNTS = os.environ.get("MAX_ACCOUNTS", "")
+    MAX_ACCOUNTS = os.environ.get("MAX_ACCOUNTS", "5")
     
     user_bot = os.environ.get("user_bot", "")
     
